@@ -34,6 +34,7 @@ class DashboardController extends Controller
           // $userDataNew = array_slice($userData, 6);
           
           
+          
           if (Auth::user()->hasRole('user')) {
                return view('userdash', ['data' => $userData]);
           } elseif (Auth::user()->hasRole('hostel')) {
