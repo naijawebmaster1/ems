@@ -62,8 +62,29 @@
       <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
         <div class="flex flex-wrap justify-center">
           <div class="w-full lg:w-9/12 px-4">
+          <p>Business Description</p>
             <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
             {{ $data['business_description'] }}              </p>
+          </div>
+          <div class="w-full lg:w-9/12 px-4">
+            <p>Message</p>
+            <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
+            {{ $data['message'] }}              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full lg:w-9/12 px-4">
+
+
+                                    <td
+                                    class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-500 text-sm leading-5">
+                                    <a href="/send-message/{{ $data['id'] }}"> <button
+                                            class="px-5 py-2 border-blue-500 border text-blue-500 rounded transition duration-300 hover:bg-blue-700 hover:text-white focus:outline-none">Send Message</button>
+                                    </a>
+                                </td>
           </div>
         </div>
       </div>

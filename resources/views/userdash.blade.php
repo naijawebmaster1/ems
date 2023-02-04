@@ -64,6 +64,12 @@
           <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>
           {{Auth::user()->YOSD}}
         </div>
+<br>
+<b><p>Message</p>
+</b>
+        <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
+            {{Auth::user()->message}}
+            </p>
       </div>
       <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
         <div class="flex flex-wrap justify-center">

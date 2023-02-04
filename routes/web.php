@@ -17,6 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/send-message/{id}', function () {
+    return view('sendMessage');
+});
+
+
+
+Route::post('/send-the-message', 'App\Http\Controllers\DashboardController@updateUserMessage')->name('updateUserMessage');
+
+
+
 
 Route::get('/login', function () {
     return view('auth/login');

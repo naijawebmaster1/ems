@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('business_description');
             $table->string('business_capacity');
             $table->string('business_id');
+            $table->string('message')->nullable();
 
             $table->string('laboratory')->nullable();
             $table->string('is_user')->nullable();

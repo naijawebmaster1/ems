@@ -80,6 +80,15 @@ class DashboardController extends Controller
      }
 
 
+     public function updateUserMessage(Request $request) {
+          $user = User::findOrFail($request->id);
+          $user->message = $request->message;
+          $user->save();
+          
+          return redirect('/user/'.$request->id);
+      }
+
+
      public function user($id)
      {
 
