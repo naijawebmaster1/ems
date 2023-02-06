@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jan 27, 2023 at 11:38 PM
+-- Generation Time: Feb 06, 2023 at 12:11 PM
 -- Server version: 5.7.34
 -- PHP Version: 7.4.21
 
@@ -54,10 +54,10 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(25, '2014_10_12_000000_create_users_table', 1),
-(26, '2014_10_12_100000_create_password_resets_table', 1),
-(27, '2019_08_19_000000_create_failed_jobs_table', 1),
-(28, '2021_02_04_091957_laratrust_setup_tables', 1);
+(1, '2014_10_12_000000_create_users_table', 1),
+(2, '2014_10_12_100000_create_password_resets_table', 1),
+(3, '2019_08_19_000000_create_failed_jobs_table', 1),
+(4, '2021_02_04_091957_laratrust_setup_tables', 1);
 
 -- --------------------------------------------------------
 
@@ -91,16 +91,16 @@ CREATE TABLE `permissions` (
 --
 
 INSERT INTO `permissions` (`id`, `name`, `display_name`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'users-create', 'Create Users', 'Create Users', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(2, 'users-read', 'Read Users', 'Read Users', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(3, 'users-update', 'Update Users', 'Update Users', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(4, 'users-delete', 'Delete Users', 'Delete Users', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(5, 'payments-create', 'Create Payments', 'Create Payments', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(6, 'payments-read', 'Read Payments', 'Read Payments', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(7, 'payments-update', 'Update Payments', 'Update Payments', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(8, 'payments-delete', 'Delete Payments', 'Delete Payments', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(9, 'profile-read', 'Read Profile', 'Read Profile', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(10, 'profile-update', 'Update Profile', 'Update Profile', '2023-01-27 22:28:42', '2023-01-27 22:28:42');
+(1, 'users-create', 'Create Users', 'Create Users', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(2, 'users-read', 'Read Users', 'Read Users', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(3, 'users-update', 'Update Users', 'Update Users', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(4, 'users-delete', 'Delete Users', 'Delete Users', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(5, 'payments-create', 'Create Payments', 'Create Payments', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(6, 'payments-read', 'Read Payments', 'Read Payments', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(7, 'payments-update', 'Update Payments', 'Update Payments', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(8, 'payments-delete', 'Delete Payments', 'Delete Payments', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(9, 'profile-read', 'Read Profile', 'Read Profile', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(10, 'profile-update', 'Update Profile', 'Update Profile', '2023-02-06 11:08:31', '2023-02-06 11:08:31');
 
 -- --------------------------------------------------------
 
@@ -213,13 +213,13 @@ CREATE TABLE `roles` (
 --
 
 INSERT INTO `roles` (`id`, `name`, `display_name`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'Admin', 'Admin', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(2, 'library', 'Library', 'Library', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(3, 'hostel', 'Hostel', 'Hostel', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(4, 'bursar', 'Bursar', 'Bursar', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(5, 'faculty', 'Faculty', 'Faculty', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(6, 'laboratory', 'Laboratory', 'Laboratory', '2023-01-27 22:28:42', '2023-01-27 22:28:42'),
-(7, 'user', 'User', 'User', '2023-01-27 22:28:42', '2023-01-27 22:28:42');
+(1, 'admin', 'Admin', 'Admin', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(2, 'library', 'Library', 'Library', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(3, 'hostel', 'Hostel', 'Hostel', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(4, 'bursar', 'Bursar', 'Bursar', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(5, 'faculty', 'Faculty', 'Faculty', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(6, 'laboratory', 'Laboratory', 'Laboratory', '2023-02-06 11:08:31', '2023-02-06 11:08:31'),
+(7, 'user', 'User', 'User', '2023-02-06 11:08:31', '2023-02-06 11:08:31');
 
 -- --------------------------------------------------------
 
@@ -238,8 +238,7 @@ CREATE TABLE `role_user` (
 --
 
 INSERT INTO `role_user` (`role_id`, `user_id`, `user_type`) VALUES
-(5, 1, 'App\\Models\\User'),
-(7, 2, 'App\\Models\\User');
+(5, 1, 'App\\Models\\User');
 
 -- --------------------------------------------------------
 
@@ -257,6 +256,7 @@ CREATE TABLE `users` (
   `business_description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `business_capacity` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `business_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `message` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `laboratory` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `is_user` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `library` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -275,9 +275,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `mat_no`, `YOSD`, `phone_no`, `CAC_registration`, `business_description`, `business_capacity`, `business_id`, `laboratory`, `is_user`, `library`, `bursar`, `hostel`, `faculty`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'EMT Admin', '-', '2004-06-26', '+1 (457) 183-3843', '1990-11-09', 'Impedit labore nost', '0', 'Technology-Based Businesses', NULL, 'false', NULL, NULL, NULL, NULL, 'emt@futa.edu.ng', NULL, '$2y$10$OOc2whyciOJbNyrmbcMpkOwd7gZRddcaVNnpvKPuV8hTybVuGtXJG', 'ZjG8QXP50QaaLHYvnTR5UJQhew6IRZeYfGX6jW9JUuoAo8mquyUvy5t61nQT', '2023-01-27 22:30:53', '2023-01-27 22:30:53'),
-(2, 'Xavier Stein', 'Consequatur mollit v', '1983-08-22', '+1 (648) 641-2181', '1982-10-04', 'Maiores quidem quia', '94', 'Green Businesses', NULL, 'false', NULL, NULL, NULL, NULL, 'user@futa.edu.ng', NULL, '$2y$10$jjeClbWaTCUU7vaoFJwYjuWqS8datYLeZj2deOCwiYPg9QPLMFYa2', NULL, '2023-01-27 22:32:42', '2023-01-27 22:32:42');
+INSERT INTO `users` (`id`, `name`, `mat_no`, `YOSD`, `phone_no`, `CAC_registration`, `business_description`, `business_capacity`, `business_id`, `message`, `laboratory`, `is_user`, `library`, `bursar`, `hostel`, `faculty`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Allen Justice', 'Officia duis rerum i', '2021-07-15', '+1 (693) 857-8147', '1991-05-24', 'Molestiae duis venia', '67', 'E-Commerce Businesses', NULL, NULL, 'false', NULL, NULL, NULL, NULL, 'emt@futa.edu.ng', NULL, '$2y$10$oYyU3bzXNeRSR4nZS/iere0zekUiC2Msr.JXvVc1xnfL06lMt1c4S', NULL, '2023-02-06 11:09:42', '2023-02-06 11:09:42');
 
 --
 -- Indexes for dumped tables
@@ -358,7 +357,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `permissions`
@@ -376,7 +375,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables

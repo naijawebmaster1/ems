@@ -163,7 +163,7 @@
                      <option value="library">Library</option>
                     <option value="Hostel">Hostel</option>
                     <option value="bursar">Bursar</option> -->
-                    <option value="Faculty">Admin</option>
+                    <!-- <option value="Faculty">Admin</option> -->
                     <!-- <option value="User">User</option>
                     <option value="laboratory">Laboratory</option> -->
                 </select>
