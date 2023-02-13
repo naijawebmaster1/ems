@@ -22,12 +22,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
     </head>
     <body class="antialiased">
-        <div class="relative items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+        <div  style=" background-image: url({{ asset('img/1.jpeg') }}); background-repeat: no-repeat; background-size:cover" class="relative items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
             <nav class="w-full">
                 <div class="container mx-auto px-6 flex items-center justify-between">
                     <div class="flex items-center" aria-label="Home" role="img">
                         <img class="cursor-pointer w-8 sm:w-auto" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg1.svg" alt="logo"/>     
-                        <p class="ml-2 lg:ml-4 text-base lg:text-2xl font-bold text-gray-800 dark:text-white">The EMS</p>
+                        <p class="ml-2 lg:ml-4 text-base lg:text-2xl font-bold text-gray-800 dark:text-white">The CENT</p>
                     </div>
                     <div>
                         <button onclick="toggleMenu(true)" class=" dark:bg-white rounded sm:block md:hidden lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500">

@@ -21366,3 +21366,9 @@ process.umask = function() { return 0; };
 /******/ 	__webpack_require__.x();
 /******/ })()
 ;
+
+
+
+// setTimeout(function(){
+//   window.location.reload();
+// }, 2000);

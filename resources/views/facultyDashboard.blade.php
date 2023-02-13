@@ -1,12 +1,12 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight"> {{ __('Dashboard for EMT admin portal') }}
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight"> {{ __('Dashboard for CENT admin portal') }}
         </h2>
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200"> You're logged in as a EMT administrator! </div>
+                <div class="p-6 bg-white border-b border-gray-200"> You're logged in as a CENT administrator! </div>
             </div>
             <!-- <div class="sm:hidden">
                 <label for="tabs" class="sr-only">Select your country</label>
@@ -51,7 +51,8 @@
                     <table class="min-w-full" id="example" class="display" style="width:100%">
                         <thead>
                             <tr>
-                            <th  class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
+                                <th
+                                    class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
                                     ID</th>
                                 <th
                                     class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
@@ -77,7 +78,7 @@
                             </tr>
                         </thead>
                         <tbody class="bg-white"> @for($i = 0; $i < count($data); $i++) <tr class="my-6">
-                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500">
+                                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500">
                                     <div class="flex items-center">
                                         <div>
                                             <div class="text-sm leading-5 text-gray-800">{{ $i + 1 }}</div>
@@ -85,8 +86,8 @@
                                     </div>
                                 </td>
                                 <td class="px-6 py-10 whitespace-no-wrap border-b border-gray-500">
-                                {{ $data[$i]['name'] }}
-                                                            </td>
+                                    {{ $data[$i]['name'] }}
+                                </td>
                                 <!-- <td  class="px-6 py-4 whitespace-no-wrap border-b text-blue-900 border-gray-500 text-sm leading-5">
                                     {{ $data[$i]['email'] }}</td> -->
                                 <td
@@ -102,8 +103,18 @@
                                 <td
                                     class="px-6 py-4 whitespace-no-wrap border-b border-gray-500 text-blue-900 text-sm leading-5">
                                     {{ $data[$i]['created_at'] }}</td>
+                                <td
+                                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-500 text-blue-900 text-sm leading-5">
+                                    {{ $data[$i]['created_at'] }}</td>
 
-                                    <td
+                                <td
+                                    class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-500 text-sm leading-5">
+                                    <a href="send-message/{{ $data[$i]['id'] }}"> <button
+                                            class="px-5 py-2 border-blue-500 border text-blue-500 rounded transition duration-300 hover:bg-blue-700 hover:text-white focus:outline-none">Send
+                                            Message</button>
+                                    </a>
+                                </td>
+                                <td
                                     class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-500 text-sm leading-5">
                                     <a href="user/{{ $data[$i]['id'] }}"> <button
                                             class="px-5 py-2 border-blue-500 border text-blue-500 rounded transition duration-300 hover:bg-blue-700 hover:text-white focus:outline-none">View</button>
@@ -129,6 +140,6 @@
                     <br />
                 </div>
         </div>
- </div>
+    </div>
     </div>
 </x-app-layout>

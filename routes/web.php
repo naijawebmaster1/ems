@@ -22,10 +22,7 @@ Route::get('/send-message/{id}', function () {
 });
 
 
-
 Route::post('/send-the-message', 'App\Http\Controllers\DashboardController@updateUserMessage')->name('updateUserMessage');
-
-
 
 
 Route::get('/login', function () {
@@ -38,7 +35,6 @@ Route::group(['middleware' => ['auth']], function() {
 });
 
 
-    Route::get('/update-status/{id}/{department}/{status}', 'App\Http\Controllers\DashboardController@updateStatus')->name('dashboard.updateStatus');
 
     Route::get('/view-user/{id}', 'App\Http\Controllers\DashboardController@singleUser')->name('dashboard.singleUser');
     Route::get('/user/{id}', 'App\Http\Controllers\DashboardController@user')->name('dashboard.user');
@@ -48,6 +44,16 @@ Route::group(['middleware' => ['auth']], function() {
 Route::group(['middleware' => ['auth', 'role:user']], function() { 
     Route::get('/dashboard/myprofile', 'App\Http\Controllers\DashboardController@myprofile')->name('dashboard.myprofile');
 });
+// for users
+Route::group(['middleware' => ['auth', 'role:user']], function() { 
+    Route::get('/dashboard/updateprofile', 'App\Http\Controllers\DashboardController@updateprofile')->name('dashboard.updateprofile');
+});
+
+Route::group(['middleware' => ['auth', 'role:user']], function() { 
+    Route::post('updateMyProfile', 'App\Http\Controllers\DashboardController@updateMyProfile')->name('updateMyProfile');
+});
+
+
 
 // for blogwriters
 Route::group(['middleware' => ['auth', 'role:blogwriter']], function() { 

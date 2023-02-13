@@ -57,6 +57,11 @@ class DashboardController extends Controller
           return view('myprofile');
      }
 
+     public function updateprofile()
+     {
+          return view('updateprofile');
+     }
+
      public function updateStatus($id, $department, $status)
      {
           $data = User::find($id);
@@ -66,6 +71,20 @@ class DashboardController extends Controller
           $data->save();
 
           return redirect('/dashboard');
+
+     }
+
+
+     public function updateMyProfile(Request $request)
+     {
+          $user = User::findOrFail($request->id);
+          $user->phone_no = $request->phone_no;
+          $user->CAC_registration = $request->CAC_registration;
+          $user->business_description = $request->business_description;
+          $user->business_capacity = $request->business_capacity;
+          $user->save();
+          
+          return redirect('dashboard');
 
      }
 

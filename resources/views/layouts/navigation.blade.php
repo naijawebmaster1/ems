@@ -17,11 +17,22 @@
                     </x-nav-link>
                 </div>
                 @if (Auth::user()->hasRole('user'))
+                @if (Auth::user()->message)
+
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard.myprofile')" :active="request()->routeIs('dashboard.myprofile')">
-                        {{ __('My Profile') }}
+                        {{ __('Message') }}
                     </x-nav-link>
                 </div>
+                @endif
+
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('dashboard.updateprofile')" :active="request()->routeIs('dashboard.updateprofile')">
+                        {{ __('Update Profile') }}
+                    </x-nav-link>
+                </div>
+
                 @endif
                 @if (Auth::user()->hasRole('blogwriter'))
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
